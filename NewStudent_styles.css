@@ -1,0 +1,139 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #333333, #666666);
+    color: white;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .gray-stripes {
+    width: 20px;
+    height: 40px;
+    background: linear-gradient(to right, #888888, #aaaaaa);
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.homepage-btn {
+    background-color: #aaaaaa;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.homepage-btn:hover {
+    background-color: #888888;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #444444;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+}
+
+h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #888888;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 9px;
+}
+
+.form-group input, 
+.form-group select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #888888;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.birthdate-group {
+    display: flex;
+    align-items: center;
+}
+
+.birthdate-group label {
+    margin-right: 27px;
+}
+
+.birthdate-group input {
+    width: 120px; 
+    margin-right: 36px; 
+}
+
+.birthdate-group input:last-child {
+    margin-right: 0;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #aaaaaa;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #888888;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 0.9rem;
+}

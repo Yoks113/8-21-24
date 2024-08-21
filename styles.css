@@ -1,0 +1,135 @@
+/* Base Styles for Desktop and Larger Screens */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0; 
+}
+
+header {
+    background-color: #333333; 
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 24px;
+    flex: 1;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.registration-button,
+.logout-button {
+    background-color: #666666; 
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.registration-button:hover,
+.logout-button:hover {
+    background-color: #555555; 
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.image-section {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.mission-vision {
+    flex: 1;
+    background-color: #444444; 
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    max-width: 100%;
+}
+
+.mission-vision h2 {
+    margin-top: 0;
+    color: #cccccc;
+}
+
+footer {
+    background-color: #333333; 
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Responsive Styles for Mobile (Phones and Smaller Screens) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .header-content h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center; /* Center title on small screens */
+    }
+
+    .header-buttons {
+        width: 100%;
+        justify-content: center;
+        gap: 5px; /* Reduce space between buttons */
+        margin-top: 10px; /* Add space between header and buttons */
+    }
+
+    .registration-button,
+    .logout-button {
+        font-size: 12px; /* Smaller font size for small screens */
+        padding: 8px 12px; /* Adjust padding for small screens */
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .image-section {
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .mission-vision {
+        padding: 15px;
+        text-align: center; /* Center text for better readability */
+    }
+}

@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #333333, #666666);
+    color: white;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .gray-stripes {
+    width: 20px;
+    height: 40px;
+    background: linear-gradient(to right, #888888, #aaaaaa);
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.homepage-btn {
+    background-color: #aaaaaa;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.homepage-btn:hover {
+    background-color: #888888;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.student-options {
+    display: flex;
+    gap: 50px;
+}
+
+.student-card {
+    background-color: #444444;
+    padding: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+}
+
+.student-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.student-card p {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.student-card:hover {
+    background-color: #333333;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 0.9rem;
+}

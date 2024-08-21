@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Student Registration</title>
+    <link rel="stylesheet" href="Regular_styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Regular Student Registration</h1>
+        </div>
+        <button class="homepage-btn" onclick="window.location.href='Homepage.html'">Homepage</button>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Search Student</h2>
+            <div class="form-group">
+                <label for="student-id">Student ID:</label>
+                <input type="text" id="student-id" name="student-id" required>
+            </div>
+            <div class="form-group">
+                <button type="button" class="submit-btn" onclick="searchStudent()">Search</button>
+            </div>
+
+            <h2>Generated Subjects</h2>
+            <div id="generated-subjects">
+                <p>Subjects will appear here after searching.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>All rights reserved. 2024 unregistered</p>
+    </footer>
+
+    <script src="Regular_script.js"></script>
+</body>
+</html>

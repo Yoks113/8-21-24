@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irregular Student Registration</title>
+    <link rel="stylesheet" href="Irregular_styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Irregular Student Registration</h1>
+        </div>
+        <button class="homepage-btn" onclick="window.location.href='Homepage.html'">Homepage</button>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form action="irregular_student_submission.php" method="post" id="irregular-form">
+                <h2>Input Subject Details</h2>
+                <div id="subject-inputs">
+                    <div class="form-group">
+                        <label for="id-number">Student ID Number:</label>
+                        <input type="text" id="id-number" name="student_number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="year-level">Year Level:</label>
+                        <input type="text" id="year-level" name="year_level" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject-code">Subject Code:</label>
+                        <input type="text" id="subject-code" name="subject_code" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject-name">Subject Name:</label>
+                        <input type="text" id="subject-name" name="subject_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="units">Units:</label>
+                        <input type="number" id="units" name="units" min="1" max="5" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="schedule">Schedule:</label>
+                        <input type="text" id="schedule" name="schedule" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Save Subject</button>
+                    </div>
+                </div>
+
+                <h2>Subjects List</h2>
+                <div id="subjects-list">
+                    <p>No subjects added yet.</p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>All rights reserved. 2024 unregistered</p>
+    </footer>
+
+    <script src="Irregular_script.js"></script>
+</body>
+</html>
